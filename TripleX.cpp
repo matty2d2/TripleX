@@ -7,11 +7,13 @@ void PrintIntroduction(int Level)
 {
     if (Level == 1)
     {
+        std::cout << "/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\\n";
         std::cout << "\nYou are a secret agent breaking into a LEVEL 1 secure server room";
         std::cout << ".\nEnter the correct code to continue...\n\n";
     }
     else
     {
+        std::cout << "/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\\n";
         std::cout << "\nYou are now breaking into a LEVEL " << Level;
         std::cout << " secure server room.\nEnter the correct code to continue...\n\n";
     }
@@ -21,14 +23,14 @@ bool CheckGuess(int GuessSum, int CodeSum, int GuessProduct, int CodeProduct)
 {
     if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-        std::cout << "You cracked the code!\n";
+        std::cout << "You cracked the code!\n\n";
         return true;
     }
     else
     {
         std::cout << "BOOM! You failed! That was the incorrect code.\n";
         std::this_thread::sleep_for(std::chrono::seconds(1));
-        std::cout << "\nYou now lost an access level.\n";
+        std::cout << "\nYou now lost an access level.\n\n";
 
         return false;
     }
@@ -53,8 +55,9 @@ bool PlayGame(int LevelDifficulty)
         std::cout << "There are 3 numbers in the code\n";
         std::cout << "+ The numbers add-up to: " << CodeSum << std::endl;
         std::cout << "x The numbers multiply to make: " << CodeProduct;
+        std::cout << "\n\n\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\n";
 
-        std::cout << "\n\nEnter guess: ";
+        std::cout << "\nEnter guess: ";
         std::cin >> GuessA >> GuessB >> GuessC;
 
         int GuessSum = GuessA + GuessB + GuessC;
