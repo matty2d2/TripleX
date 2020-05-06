@@ -5,15 +5,15 @@
 
 void PrintIntroduction(int Level)
 {
+    std::cout << "/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\\n";
+    
     if (Level == 1)
     {
-        std::cout << "/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\\n";
         std::cout << "\nYou are a secret agent breaking into a LEVEL 1 secure server room";
         std::cout << ".\nEnter the correct code to continue...\n\n";
     }
     else
     {
-        std::cout << "/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\\n";
         std::cout << "\nYou are now breaking into a LEVEL " << Level;
         std::cout << " secure server room.\nEnter the correct code to continue...\n\n";
     }
